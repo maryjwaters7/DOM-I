@@ -51,6 +51,19 @@ for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].style.color = 'green';//ADD NEW CONTENT COLOR CHANGE
 }
 
+const newNavLinkA = document.createElement('a');
+newNavLinkA.setAttribute('href', '#');
+newNavLinkA.textContent = 'Link A';
+newNavLinkA.style.color = "green";
+const newNav = document.querySelector('nav');
+newNav.prepend(newNavLinkA);
+
+const newNavLinkB = document.createElement('a');
+newNavLinkB.setAttribute('href', '#');
+newNavLinkB.textContent = 'Link B';
+newNavLinkB.style.color = "green";
+newNav.appendChild(newNavLinkB);
+
 
 //HEADING SECTION
 const newCtaArray = siteContent.cta;
